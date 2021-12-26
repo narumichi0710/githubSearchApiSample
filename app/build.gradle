@@ -2,3 +2,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
 }
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
