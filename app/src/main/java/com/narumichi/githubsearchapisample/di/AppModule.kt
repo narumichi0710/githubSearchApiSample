@@ -1,6 +1,8 @@
 package com.narumichi.githubsearchapisample.di
 
 import com.narumichi.githubsearchapisample.R
+import com.narumichi.githubsearchapisample.api.ApiHelper
+import com.narumichi.githubsearchapisample.api.ApiHelperImpl
 import com.narumichi.githubsearchapisample.api.ApiService
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -52,6 +54,9 @@ object ApiModule {
     @Singleton
     fun provideApiService(retrofit: Retrofit) = retrofit.create(ApiService::class.java)
 
+    @Provides
+    @Singleton
+    fun provideApiHelper(apiHelper: ApiHelperImpl): ApiHelper = apiHelper
 
 }
 
