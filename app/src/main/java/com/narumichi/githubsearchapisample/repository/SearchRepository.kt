@@ -8,5 +8,5 @@ import javax.inject.Inject
 class SearchRepository @Inject constructor(
     private val apiHelperImpl: ApiHelperImpl
 ) {
-    suspend fun getListSearch(): Response<ResponseListSearch> = apiHelperImpl.getListSearch()
+    suspend fun getListSearch(value: String): Response<ResponseListSearch> = apiHelperImpl.getListSearch(value)
 }
