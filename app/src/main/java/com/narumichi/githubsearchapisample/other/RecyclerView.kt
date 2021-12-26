@@ -2,10 +2,19 @@ package com.narumichi.githubsearchapisample.other
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.databinding.BindingAdapter
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.LifecycleOwner
 import androidx.recyclerview.widget.RecyclerView
 
+
+@Suppress("UNUSED_PARAMETER")
+@BindingAdapter("binding_listObserve")
+fun RecyclerView.listObserve(collection: Collection<Any>?) {
+    val currentViewHolderSize = layoutManager?.childCount
+    adapter?.notifyDataSetChanged()
+    if (currentViewHolderSize == 0) scheduleLayoutAnimation()
+}
 
 class BindingViewHolder<T : ViewDataBinding>(val binding: T) : RecyclerView.ViewHolder(binding.root)
 

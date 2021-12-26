@@ -4,18 +4,31 @@
     xmlns:binding="http://schemas.android.com/tools">
 
     <data>
+        <variable
+            name="viewModel"
+            type="com.narumichi.githubsearchapisample.ui.SearchViewModel" />
+
+
     </data>
     <FrameLayout
-        android:id="@+id/list_repository"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_List"
+            binding_listObserve="@{viewModel.responseListSearch.data.items}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="32dp" />
 
-        <TextView
-            android:id="@+id/full_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="full_name" />
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center" />
+
     </FrameLayout>
+
 
 </layout>
