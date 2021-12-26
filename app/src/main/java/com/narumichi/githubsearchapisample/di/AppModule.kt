@@ -1,6 +1,5 @@
 package com.narumichi.githubsearchapisample.di
 
-import com.narumichi.githubsearchapisample.R
 import com.narumichi.githubsearchapisample.api.ApiHelper
 import com.narumichi.githubsearchapisample.api.ApiHelperImpl
 import com.narumichi.githubsearchapisample.api.ApiService
