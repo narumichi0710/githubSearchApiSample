@@ -2,10 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_global"
-    app:startDestination="@id/listSearchRepositoryFragment">
+    app:startDestination="@id/listSearchFragment">
 
     <fragment
-        android:id="@+id/listSearchRepositoryFragment"
-        android:name="com.narumichi.githubsearch.presentation.view.fragment.ListRepositoryFragment"
-        android:label="ListSearchRepositoryFragment" />
+        android:id="@+id/listSearchFragment"
+        android:name="com.narumichi.githubsearchapisample.ui.ListSearchFragment"
+        android:label="ListSearchFragment" />
+
 </navigation>

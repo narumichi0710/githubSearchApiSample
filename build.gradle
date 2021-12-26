@@ -95,6 +95,9 @@ subprojects {
             viewBinding {
                 enabled = true
             }
+            kapt {
+                correctErrorTypes true
+            }
         }
     }
 }
