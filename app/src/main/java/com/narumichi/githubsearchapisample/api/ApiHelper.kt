@@ -4,5 +4,5 @@ import com.narumichi.githubsearchapisample.models.ResponseListSearch
 import retrofit2.Response
 
 interface ApiHelper {
-    suspend fun getSearchRepositories(): Response<ResponseListSearch>
+    suspend fun getListSearch(): Response<ResponseListSearch>
 }
