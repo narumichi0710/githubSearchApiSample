@@ -1,8 +1,7 @@
 # Sample Project for GitHub Search API (https://docs.github.com/ja/rest/reference/search)
 
 ### Architecture
-- MVVM+Databinding
-- Single Module
+- MVVM
 
 ### Library
 - Android Architecure Component
@@ -11,7 +10,6 @@
 - Retrofit 
 - OkHttp3
 - Moshi
-
 
 ### Search repositories
 - GET /search/repositories
