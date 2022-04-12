@@ -9,7 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.narumichi.githubsearchapisample.databinding.ItemListSearchBinding
 import com.narumichi.githubsearchapisample.databinding.ListSearchFragmentBinding
-import com.narumichi.githubsearchapisample.models.SearchItem
+import com.narumichi.githubsearchapisample.model.SearchItem
 import com.narumichi.githubsearchapisample.other.DataBindingAdapter
 import com.narumichi.githubsearchapisample.other.bind
 import com.narumichi.githubsearchapisample.other.toggle

@@ -1,7 +1,7 @@
 package com.narumichi.githubsearchapisample.ui
 
 import androidx.lifecycle.*
-import com.narumichi.githubsearchapisample.models.ResponseListSearch
+import com.narumichi.githubsearchapisample.model.ResponseListSearch
 import com.narumichi.githubsearchapisample.other.Resource
 import com.narumichi.githubsearchapisample.repository.SearchRepository
 import dagger.hilt.android.lifecycle.HiltViewModel

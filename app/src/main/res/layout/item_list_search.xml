@@ -6,7 +6,7 @@
 
         <variable
             name="searchListData"
-            type="com.narumichi.githubsearchapisample.models.SearchItem" />
+            type="com.narumichi.githubsearchapisample.model.SearchItem" />
 
     </data>
 

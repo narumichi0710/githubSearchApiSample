@@ -1,6 +1,6 @@
 package com.narumichi.githubsearchapisample.api
 
-import com.narumichi.githubsearchapisample.models.ResponseListSearch
+import com.narumichi.githubsearchapisample.model.ResponseListSearch
 import retrofit2.Response
 import javax.inject.Inject
 
