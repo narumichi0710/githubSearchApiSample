@@ -1,4 +1,4 @@
-package com.narumichi.githubsearchapisample.models
+package com.narumichi.githubsearchapisample.model
 
 import com.squareup.moshi.Json
 
