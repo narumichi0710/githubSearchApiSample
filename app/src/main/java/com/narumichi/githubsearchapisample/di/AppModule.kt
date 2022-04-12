@@ -17,6 +17,8 @@ import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
 
+// 他のクラスへの依存関係として必要なインスタンスを提供し、
+// シングルトンの動作を維持すすためのモジュールオブジェクト
 @Module
 @InstallIn(SingletonComponent::class)
 object ApiModule {

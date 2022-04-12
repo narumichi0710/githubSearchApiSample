@@ -12,7 +12,7 @@ import kotlin.random.nextInt
 
 
 @HiltViewModel
-// ViewModelのコンストラクタにSearchRepositoryの依存性を注入している
+// ViewModelのコンストラクタにSearchRepositoryの依存性を注入しているため、インスタンスを新しく生成する必要は無い
 class SearchViewModel @Inject constructor(
     private val searchRepository: SearchRepository
 ) : ViewModel() {
